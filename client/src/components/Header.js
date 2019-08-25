@@ -9,15 +9,10 @@ class Header extends Component {
        case null:
          return;
        case false:
-        return (
-          <li>
-            <a href="/auth/google" className='class-nav-fnt class-nav-fnt2'><i className="fab fa-google fa-lg mg-rg"> </i>Sign up with Google</a> 
-            </li>
-        );
+        return ( <li> <a href="/auth/google" className='class-nav-fnt class-nav-fnt2'><i className="fab fa-google fa-lg mg-rg"> </i>Sign up with Google</a></li> );
        default:
          return (
            <Fragment>
-
            <li>
              <Payments />
            </li>
@@ -25,18 +20,21 @@ class Header extends Component {
              Credits: {this.props.auth.credits}
            </li>
            <li>
+           <a href="/surveys" className="class-nav-fnt class-nav-fnt2">Surveys</a>
+           </li>
+           <li>
               <a href="/api/logout" className="class-nav-fnt class-nav-fnt2"><i className="fas fa-sign-out-alt fa-lg mg-rg"></i>Log out</a>
            </li>
            </Fragment>
          );
-    }
-  }
+    };
+  };
 
   render() {
     return (
       <nav>
         <div className='nav-wrapper class-bg class-shadow'>
-          <Link to={this.props.user ? '/' :  '/surveys' } 
+          <Link to={this.props.auth ?   '/surveys' : '/'  } 
           className='left brand-logo class-mglf class-nav-fnt2'
           > 
             VT Emaily

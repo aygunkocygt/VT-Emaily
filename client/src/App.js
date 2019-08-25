@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Landing from './components/Landing';
 
-const Dashboard = () => <h2>dashboard</h2>;
+const Dashboard = () => <h2>Dashboard coming be soon</h2>;
 const SurveyNew = () => <h2>SurveyNew</h2>;
 
 
