@@ -8,6 +8,26 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.underLine {
+  text-decoration: underline;
+  padding-top:2px;
+  }
+
+  .padTopBot {
+    padding-top: 2px;
+    
+  }
+
+  .sorry{
+    font-family: "Roboto";
+    font-size: 65px;
+    height: 100%;
+    position:relative;
+    padding-top: 100px;
+    color: white;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -15,6 +35,7 @@ code {
 
 .class-bg{
   background: #2D2E2C;
+  padding: 0px 10px;
 }
 .class-mglf{
   margin-left: 20px;
@@ -29,6 +50,7 @@ code {
 
 .page-footer{
   position: relative;
+  padding: 0px 10px;
   left:0;
   bottom:0;
   right:0;

@@ -14,8 +14,8 @@ class Payments extends Component{
              amount={500}
              token={token => this.props.handleToken(token)}
              stripeKey={process.env.REACT_APP_STRIPE_KEY}
-             name="Test Moddur"
-             description="Fake kredi kartı kullanabilirsiniz."
+             name="Online Ödeme Sistemi"
+             description="Test Moddur, No örn:42424242**"
             >
              <Link to={""} className="class-nav-fnt class-nav-fnt2">Add Credits</Link>
              </StripeCheckout>
