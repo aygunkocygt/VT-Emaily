@@ -49,6 +49,10 @@ componentDidMount(){
                                 <a>Yes: {survey.yes}</a>
                                 <a>No: {survey.no}</a>
                                 </div>
+                                <div>
+                                <p style={{color: 'white', paddingLeft: 5}}>Not: Spam veya Tüm Postalar kategorisini kontrol ediniz.</p>
+                                </div>
+                               
                             </div>
                         );
                     });

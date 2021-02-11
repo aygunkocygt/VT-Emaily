@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import * as actions from './actions';
 
@@ -24,12 +24,12 @@ class App extends Component{
             <Header />
            
             <Route path='/' exact component={Landing} />
+           
             <div className="container">
             <Route path='/surveys' exact component={Dashboard} />
-            <Route path='/surveys/new' component={SurveyNew} />
+            <Route path='/surveys/new' exact component={SurveyNew} />
             </div>
            
-            
             <Footer />
           </div>
         </BrowserRouter>

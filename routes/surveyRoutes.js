@@ -54,13 +54,12 @@ app.post('/api/surveys/webhooks', (req,res) => {
 });
 
  app.post('/api/surveys', requireLogin, requireCredits, async (req, res) => {
-  const { title, subject, body, recipients } = req.body;
   
    const survey = new Survey({
-       title,
-       subject,
-       body,
-       recipients: recipients.split(',').map(email => ({ email: email.trim() })),
+       title : req.body.title,
+       subject : req.body.subject,
+       body : req.body.body,
+       recipients : req.body.recipients.split(',').map(email => ({ email: email.trim() })),
        _user: req.user.id,
        dateSent: Date.now()
    });
